@@ -21,7 +21,7 @@ const getContext = async () => {
 const unpause = async () => {
     try {
         console.log('unpause...');
-        let res = await paxContract.methods.unpause().call({from: accounts[0]});
+        let res = await paxContract.methods.unpause().send({from: accounts[0]});
         console.log(res)
     } catch(err) {
         if(err.message.indexOf('revert already unpaused') == -1) {

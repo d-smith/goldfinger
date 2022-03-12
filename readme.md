@@ -24,6 +24,12 @@ module.exports = {
 ```
 
 * deploy the contract via `truffle migrate`
-* copy PAXGImplementation.json from build/contracts into this project
+* copy PAXGImplementation.json from build/contracts into this project, e.g.
+`cp ../paxos-gold-contract/build/contracts/PAXGImplementation.json .`
 * check the network id you'll source the contract address from against the PAXGImplementation.json you just copied, true up the script as needed
 * run it
+
+
+In truffle console (paxg project)
+
+let instance = await PAXGImplementation.deployed()
