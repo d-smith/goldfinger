@@ -1,9 +1,10 @@
 const Web3 = require('web3')
-const web3 = new Web3("ws://localhost:7545");
+const web3 = new Web3(process.env.NODE_ENDPOINT);
 
 const fs = require('fs');
-const paxgImplementation = JSON.parse(fs.readFileSync('./PAXGImplementation.json'));
-const myNetwork = '5777'
+const paxgImplementation = JSON.parse(fs.readFileSync(process.env.CONTRACT_JSON));
+const myNetwork = process.env.NETWORK_ID;
+
 
 const paxContract = new web3.eth.Contract(
     paxgImplementation.abi,
