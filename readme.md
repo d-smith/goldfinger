@@ -46,4 +46,6 @@ node events.js
 
 In truffle console (paxg project)
 
+```
 let instance = await PAXGImplementation.deployed()
+```
