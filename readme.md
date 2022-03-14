@@ -6,7 +6,7 @@ Set up:
 
 * Clone the paxg contract - https://github.com/paxosglobal/paxos-gold-contract
 
-* Set your truffle-config.js development network settings appropriately, for examle for ganache
+* Set your truffle-config.js development network settings appropriately, for example for ganache
 
 ```
 module.exports = {
@@ -42,7 +42,7 @@ export CONTRACT_JSON=../paxos-gold-contract/build/contracts/PAXGImplementation.j
 node events.js
 ```
 
-
+## Truffle console - PAXG contract
 
 In truffle console (paxg project)
 
